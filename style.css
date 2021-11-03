@@ -1,253 +1,60 @@
 body {
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:small;
-    background-color:#CCC; /*màu nền xám cho trang web*/
-    /*background:url(images/background.gif); hoặc dùng hình nền*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-#website{
-    width:1040px;
-    margin:auto; /* Canh giữa website */
-    background-color:#FFF;
-    height:800px;
-}
-*{
-    margin:0px;
-    padding:0px;
-}
-#top {
-    width: 1000px;
-    height: 28px;
+.container {
+    width: 900px;
+    border: 2px solid black;
     margin: auto;
-    background-color: #F4F4F4;
-    display: flex;
-    justify-content: space-between;
 }
 
-#top_left a img {
-    width: 20px;
-    margin: 4px;
-}
-
-a {
-    text-decoration: none;
-}
-
-#top_right {
-    margin: 5px 20px 0 0px;
-}
-
-#top_right ul {
-    list-style: none;
-    display: flex;
-}
-
-#top_right ul li {
-    margin-right: 5px;
-    color: #999;
-}
-
-#top_right ul li a {
-    color: #999;
-    font-size: 15px;
-}
-
-#top_right ul li a:hover {
-    color: #00f;
-}
-#header {
-    width: 1000px;
-    height: 150px;
-    margin: auto;
-    border: 1px solid #000;
-}
-
-#header .logo {
-    float: left;
-    width: 500px;
-    height: 100px;
-    margin: 15px 0 0 50px;
-}
-
-#header .giohang {
-    float: right;
-    width: 180px;
-    height: 67px;
+.container .top {
+    padding: 10px 0px;
     display: flex;
     align-items: center;
-    position: relative;
+    width: 100%;
+    height: 200px;
+    color: rgb(219, 214, 214);
+    background: linear-gradient(rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300)), url("https://tse2.mm.bing.net/th?id=OIP.F_bocHhigH30hjSmAkydYwHaF7&pid=Api&P=0&w=224&h=180") no-repeat center center;
+    background-size: cover;
 }
 
-.info_giohang {
-    color: #f00;
-    margin-left: 30px;
-    text-align: center;
+.container .top .avatar img {
+    box-shadow: 0 0 10px black;
+    width: 170px;
+    border-radius: 50%;
+    margin-left: 50px;
 }
 
-#header .timkiem {
-    float: right;
-    width: 400px;
-    height: 60px;
+.container .top .info {
+    margin-left: 50px;
+}
+.container .top .info h2{
+    color: rgb(219, 214, 214);
+}
+.container .top .info h1 {
+    color: white;
 }
 
-.phone_search {
-    float: right;
-    width: 400px;
-    height: 60px;
+.container .top .info p i {
+    margin-right: 5px;
+}
+.bot {
     display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 20px 50px;
 }
-
-#header_phone {
-    width: 150px;
-    height: 30px;
-    float: left;
-    margin-top: 28px;
-    font-size: 14px;
-    color: #00f;
-    line-height: 30px;
+.bot .left{
+    width: 50%;
 }
-
-#header_search {
-    width: 216px;
-    height: 30px;
-    background-color: #f7f7f7;
-    margin-top: 28px;
-    float: left;
-    position: relative;
-
+.bot .left h3,h2 {
+    color: rgb(23, 221, 23);
 }
-
-#txtsearch {
-    width: 180px;
-    height: 29px;
-    border: 0;
-    background-color: #f7f7f7;
+.bot .right{
+    width: 40%;
+    padding: 0px 15px;
+    border-radius: 6px;
+    background-color: rgb(92, 228, 87);
 }
-
-#btnsearch {
-    width: 34px;
-    height: 30px;
-    position: absolute;
-    z-index: 99;
-    top: 0;
-    right: 0;
-    border: 0;
-    cursor: pointer;
+.bot .right h3{
+     color: rgb(0, 0, 0);
 }
-
-#menu {
-    width: 1000px;
-    height: 42px;
-    margin: 15px auto;
-    border: 1px solid #000000;
-    background-color: #000;
-}
-
-#menu ul li {
-    float: left;
-    border: 1px dotted #fff;
-    height: 42px;
-}
-
-#menu ul {
-    list-style: none;
-}
-
-#menu ul li a {
-    padding: 0 25px 0 25px;
-    color: #fff;
-    background-color: #000;
-    font-weight: bold;
-    line-height: 42px;
-    display: inline-block;
-}
-
-#menu img {
-    float: left;
-    width: 30px;
-    padding: 5px 10px 0 10px;
-}
-
-#menu ul li a:hover {
-    background-color: #999;
-    color: #00c;
-}
-#main{
-    width:1000px;
-    margin:10px auto;
-    height:800px;
-}
-#main_left{
-    width:230px;
-    height:750px;
-    float:left;
-}
-#main_right {
-    width: 749px;
-    /* height: 750px; */
-    float: left;
-    border-left: 1px dotted #333;
-    margin-left: 20px;
-}
-#menu_left{
-    width:200px;
-    height:300px;
-    border:1px solid #000;
-    margin:10px 0 0 14px; /*div cách trên 10, trái 14*/
-    border:1px solid #cccccc;
-    border-radius:6px;
-}
-#menu_left >ul{ /* dấu ">" chỉ ảnh hưởng ul đầu tiên, k ảnh hưởng ul thứ 2*/
-    padding:10px 20px 10px 20px;
-}
-#menu_left li{
-    line-height:25px;
-}
-#menu_left >ul >li{
-    border-bottom:1px solid #999;
-}
-.submenu li{
-    padding-left:30px;
-    background:url(images/arrow.png) no-repeat 15px 10px;
-}
-#menu_left a{
-    color:#00F; /*màu xanh*/
-}
-#menu_left a:hover{
-    color:#f1004c; /*màu đỏ*/
-    cursor:pointer; /*hình bàn tay*/
-}
-ul{
-    list-style-type:none; /*bỏ dấu chấm tròn đầu danh sách*/
-}
-#products{
-    margin-left:17px; /*div products cách div main-right 17px*/
-}
-#products ul li{
-    width:230px;
-    height:340px;
-    float:left; 
-    margin-right:7px;
-}
-.content{
-    width:210px;
-    height:320px;
-    margin:9px 10px 9px 10px;
-}
-.title{
-    margin-top: 6px;
-    text-align:center;
-    color:#F09;
-}
-.price{
-    margin-top:3px;
-    text-align:center;
-    font-size:12px;
-    color:#999999;
-}
-#products ul li:hover{
-    background:#ccc;
-    box-shadow:0 0 5px #2c2c30; 
-}
-
-
-

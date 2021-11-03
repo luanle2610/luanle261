@@ -5,128 +5,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web bán hàng</title>
+    <title>CV công việc</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="website">
-        <div id="top">
-            <div id="top_left">
-                <a href=""><img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.png"
-                        alt=""></a>
-                <a href=""><img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt=""></a>
-                <a href=""><img src="https://yogadaily.com.vn/wp-content/uploads/2018/06/fb-icon.png" alt=""></a>
+    <div class="container">
+        <div class="top">
+            <div class="avatar">
+                <img src="https://scontent.fvca1-1.fna.fbcdn.net/v/t39.30808-6/245775151_1136335700231729_290299763482046364_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=bpkqyTJ5EzIAX-poTAM&_nc_ht=scontent.fvca1-1.fna&oh=3afb9b0a3b53eace10e0c23ba6c014cc&oe=61874FD8" alt="">
             </div>
-            <div id="top_right">
-                <ul>
-                    <li><a href="">Đăng nhập</a></li>
-                    <li>|</li>
-                    <li><a href="">Đăng ký</a></li>
-                </ul>
+            <div class="info">
+                <h1>LÊ HỮU LUÂN (official)</h1>
+                <h2>LẬP TRÌNH VIÊN</h2>
+                <p><i class="fas fa-envelope"></i>huuluan140319@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>+84 26895861</p>
+                <p><i class="fas fa-map-marker-alt"></i>Cao Lanh, Đong Thap</p>
             </div>
         </div>
-        <div id="header">
-            <div id="logo">
-                <img src="data:image/png;base64,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"
-                    width="400" height="90" alt="">
-            </div>
-            <div class="giohang">
-                <img src="images/giohang.png" alt="" style="width: 50px;">
-                <div class="info_giohang">
-                    <p>0 sản phẩm</p>
-                    <p>0 đ</p>
-                </div>
-            </div>
-            <div class="timkiem">
-                <div class="phone_search">
-                    <div id="header_phone">
-                        Support: 0703123456
-                    </div>
-                    <div id="header_search">
-                        <form action="">
-                            <input type="text" name="" id="txtsearch" width="290px" height="29px"
-                                placeholder="Search for here...">
-                            <button type="submit" id="btnsearch"><i class="fas fa-search"></i></button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="menu">
-            <ul>
-                <img src="https://happyparty.vn/wp-content/uploads/2019/05/home-icon-png-white-4.png" alt="">
-                <li><a href="">Trang chủ</a></li>
-                <li><a href="">Giới thiệu</a></li>
-                <li><a href="">Thời trang Nam</a></li>
-                <li><a href="">Thời trang Nữ</a></li>
-                <li><a href="">Hướng dẫn mua hàng</a></li>
-                <li><a href="">Liên hệ</a></li>
-                <li><a href="">Trợ giúp</a></li>
-            </ul>
-        </div>
-        <div id="main">
-            <div id="main_left">
-                <div id="menu_left">
-                    <ul>
-                        <li><a href="">Quần áo nữ</a>
-                            <ul class="submenu">
-                                <li><a href="">Áo thun nữ</a></li>
-                                <li><a href="">Áo sơ mi nữ</a></li>
-                                <li><a href="">Áo khoác, vest nữ</a></li>
-                                <li><a href="">Váy đầm</a></li>
-                                <li><a href="">Quần jean</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="">Giày dép nữ</a>
-                            <ul class="submenu">
-                                <li><a href="">Giày cao gót</a></li>
-                                <li><a href="">Giày búp bê</a></li>
-                                <li><a href="">Giày sandal nữ</a></li>
-                                <li><a href="">Giày bata nữ</a></li>
-                                <li><a href="">Giày thể thao nữ</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div id="main_right">
-                <div id="products">
-                    <ul>
-                        <li>
-                            <div class="content">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQswT1BwTjQhbM70v5Zk6TGNvlgGhniiV9hmg&usqp=CAU"
-                                    width="210" height="280" alt="">
-                                <p class="title">áo thun dáng dài</p>
-                                <p class="price">2.000.000đ</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="content">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRysU66CFJKpVqHMnN6n_NNHSGanSFWDVz5jw&usqp=CAU"
-                                    width="210" height="280" alt="">
-                                <p class="title">áo thun dáng dài</p>
-                                <p class="price">2.022.000đ</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="content">
-                                <a href="#">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP_qgE-J2-39Shc35PvnLS0h1Wn2OJL7ckWg&usqp=CAU"
-                                        width="210" height="280" alt="">
-                                    <p class="title">áo thun dáng dài</p>
-                                </a>
-                                <p class="price">1.200.000đ</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        <div class="bot">
+            <div class="left">
+                <h2>GIỚI THIỆU</h2>
+                <hr>
+                Thuộc tuýp người giải quyết vấn đề (problem-solver) và đam mê kinh doanh trực tuyến, muốn tham gia một nhóm các lập trình viên có cùng chí hướng. Đang tìm kiếm một vị trí phù hợp tại công ty có các dự án với độ thử thách cao, nơi là hiệu suất làm việc được công nhận và khen thưởng xứng đáng.
+                <h3>THIẾT KẾ ĐỒ HỌA</h3>
+                <hr>
+                <p>Học thêm về phân tích kinh doanh và thiết kế đồ hoạ để ứng dụng cho các sản phẩm web.
+                    Viết hướng dẫn kỹ thuật và hướng dẫn sử dụng.
+                    Tư duy chiến lược ở tất cả các phần của quá trình thiết kế.
+                    Phân tích nhu cầu người dùng và hành vi người dùng.
+                </p>
 
+                <h3>Intelligent Technology</h3>
+                <hr>
+                <p>Học tập/ làm việc độc lập và cùng với bạn để cải thiện các dự án trên lớp và dự án cá nhân.
+                    Kiến thức về PHP, HTML, CSS, XML và JavaScript/ jQuery.
+                    Nhận thức về ngành Phát triển Web và các công nghệ mới.
+                </p>
+                
+                <h3>WEB DEVELOPER</h3>
+                <hr>
+                    <p>Là một thành viên của nhóm đa chức năng, thực hiện các nhiệm vụ đặc biệt theo yêu cầu của Giám đốc CNTT. Dựa trên bản mô tả cụ thể đảm bảo các trang web được xây dựng phù hợp, chính xác các yêu cầu của khách hàng.
+                        Viết các thông số thiết kế nội bộ và bên ngoài.
+                        Thực hiện bảo trì và cập nhật cho các trang web khách hàng hiện tại.
+                        Tham gia vào việc tạo một trang web từ đầu.
+                        Giúp người dùng cuối giải quyết các vấn đề về hoạt động.
+                        Tham gia vào các buổi brainstorming để đưa ra ý tưởng.
+                        Viết và hệ thống tài liệu phần mềm và thông số kỹ thuật.
+                        Làm nhiều dự án đồng thời với tiêu chuẩn và hiệu suất cao.
+                        Tham gia vào dự án phát triển trang web chơi game trực tuyến lớn.
+                        Giải quyết vấn đề tương thích trên nhiều trình duyệt.
+                        Tích hợp các trang web với Facebook, Twitter và YouTube.
+                    </p>
+            </div>
+            <div class="right">
+                <h3>Front-end Developer</h3>
+                <hr>
+                <p>Chịu trách nhiệm làm việc với nhiều dự án cùng lúc, thiết kế các trang web hấp dẫn, tương tác hàng ngày với các bạn thiết kế đồ họa, back-end developer và nhóm tiếp thị.
+                    Phát triển và duy trì chức năng front-end của các trang web.
+                    Tham gia thảo luận với khách hàng để làm rõ những gì họ muốn.
+                    Thiết kế prototypes cho ứng dụng và trang web.
+                    Viết HTML, CSS và JavaScript tương thích với nhiều trình duyệt (cross-browser).
+                    Quản lý một số cơ sở dữ liệu và các công cụ báo cáo.
+                    Liên hệ với quản trị viên web bên ngoài để xác định vị trí đặt link (cho mục đích SEO)/p>
+                <h3>TOEIC</h3>
+                <hr>
+                <p>Đọc và viết tài liệu tham khảo.
+                    Viết business và support email.
+                    Nghe, nói và take note khi thảo luận công việc qua các buổi họp, call với khách hàng.
+                </p>
+                <h3>KỸ NĂNG</h3>
+                <h5>Adobe Photoshop <hr>
+                    Adobe Indesign <hr>
+                    HTML/CSS <hr>
+                    Javascript <hr>
+                </h5>
+            </div>
+        </div>
     </div>
-
 </body>
 
 </html>
