@@ -1,60 +1,70 @@
-body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.container {
-    width: 900px;
-    border: 2px solid black;
-    margin: auto;
-}
-
-.container .top {
-    padding: 10px 0px;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 200px;
-    color: rgb(219, 214, 214);
-    background: linear-gradient(rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300)), url("https://tse2.mm.bing.net/th?id=OIP.F_bocHhigH30hjSmAkydYwHaF7&pid=Api&P=0&w=224&h=180") no-repeat center center;
-    background-size: cover;
-}
-
-.container .top .avatar img {
-    box-shadow: 0 0 10px black;
-    width: 170px;
-    border-radius: 50%;
-    margin-left: 50px;
-}
-
-.container .top .info {
-    margin-left: 50px;
-}
-.container .top .info h2{
-    color: rgb(219, 214, 214);
-}
-.container .top .info h1 {
+section .list-group a{
     color: white;
+    background-color: #009cd7;
+    transition: .1s;
 }
-
-.container .top .info p i {
-    margin-right: 5px;
+.menu .navbar .container-fluid .nav-link:hover{
+    background-color: rgba(1, 1, 110, 0.993);
 }
-.bot {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 20px 20px 50px;
+.menu .navbar .container-fluid #navbarSupportedContent ul li{
+    transition: .3s;
 }
-.bot .left{
-    width: 50%;
+.menu .navbar .container-fluid #navbarSupportedContent ul li:hover{
+    background-color: rgba(1, 1, 110, 0.993);
 }
-.bot .left h3,h2 {
-    color: rgb(23, 221, 23);
+section .row .cards .card{
+    overflow: hidden;
 }
-.bot .right{
-    width: 40%;
-    padding: 0px 15px;
-    border-radius: 6px;
-    background-color: rgb(92, 228, 87);
+section .row .cards .card a img{
+    transition: .4s;
 }
-.bot .right h3{
-     color: rgb(0, 0, 0);
+section .row .cards .card a img:hover{
+    transform: scale(1.05);
+}
+section .row .chudehot .tag{
+    background-color: #009cd7;
+    position: relative;
+    transition: .3s;
+}
+section .row .chudehot .tag:hover{
+    transform: scale(1.05);
+}
+section .row .chudehot .tag::before{
+    content: "";
+    width: 22px;
+    height: 22px;
+    top: 5px;
+    left: -10px;
+    background-color: #009cd7;
+    position: absolute;
+    transform: rotate(45deg);
+}
+section .row .thaoluan ol li a{
+    text-decoration: none;
+    color: gray;
+}
+section .row .thaoluan ol li{
+    margin-bottom: 10px;
+}
+.bacau{
+    color: rgb(104, 7, 110);
+}
+header .row .mxh a i{
+    font-size: 30px;
+}
+.tieude
+{
+    color: red;
+    border-bottom: 3px solid red;
+    font-weight: bold;
+   
+}
+.video-ytb
+{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+.team{
+    padding-left: 500px;
 }
